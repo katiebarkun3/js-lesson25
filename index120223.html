@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //console.log('запрос данных');
+
+        /* setTimeout(() => {
+            console.log('подготовка данных');
+
+            let backendData = {
+                server: 'aws',
+                port: 2000,
+                status: 'ok'
+            }
+
+            setTimeout(() => {
+                backendData.modified = true;
+                console.log(backendData);
+            }, 2000)
+        }, 2000) */
+
+
+
+
+
+        /* let prom = new Promise(function(resolve, reject) {
+            
+            setTimeout(() => {
+                console.log('запрос данных');
+
+                let backendData = {
+                    server: 'aws',
+                    port: 2000,
+                    status: 'ok'
+                }
+
+                reject();
+          //   resolve(backendData); 
+
+
+            }, 2000)
+        });
+
+        prom.then(data => {
+            console.log(data);
+            data.modified = true;
+            return data
+        }).then(nextData => console.log(nextData))
+        .catch(err => console.log('Error'))
+        .finally(() => console.log('finally'));
+
+        console.log('основной поток не блокирован'); */ //jsonplaceholder
+
+
+
+
+
+        let url = 'https://jsonplaceholder.typicode.com/todos';
+
+        /* function fetchTodos(){
+            console.log('fetch todo started...');
+            return fetch(url).then(response => response.json())
+        }
+
+        fetchTodos().then(data => console.log(data)).catch(e => console.log(e).finally(() => console.log('finally')));
+
+        console.log('основной поток не блокирован');  */
+
+
+
+
+
+        /* async function fetchAsincTodos(){
+            console.log('fetch todo started...');
+            try{
+                let response = await fetch(url);
+                let data = await response.json();
+                console.log(data);
+            } catch (e){
+                console.log(e);
+            } finally {
+                console.log('finally');
+            }
+            
+        }
+
+        fetchAsincTodos();
+
+        console.log('основной поток не блокирован'); */
+
+
+
+
+        /* 1 */
+        async function appStart(number){
+            
+            //let num = Math.random(1000000);
+        }
+
+        console.log('основной поток не блокирован'); 
+
+
+
+
+    </script>
+
+
+</body>
+</html>
